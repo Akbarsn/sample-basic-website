@@ -1,0 +1,110 @@
+.jumbotron {
+  background-color: #428ccc;
+  color: white;
+  padding-top: 64px;
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 0px 32px;
+
+    .left-side {
+      align-self: center;
+      width: 80%;
+
+      .title {
+        font-size: 32px;
+      }
+    }
+
+    .right-side {
+      align-self: center;
+      justify-self: center;
+
+      .image {
+        height: 560px;
+      }
+    }
+  }
+}
+
+.creator {
+  margin: 32px;
+
+  .title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 48px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+
+    .card {
+      background-color: #a9ce4d;
+      justify-self: center;
+      padding: 12px 8px;
+      border-radius: 12px;
+
+      .card-image {
+        height: 240px;
+      }
+
+      .name {
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+.movies {
+  background-color: #428ccc;
+  padding: 32px 0px 32px 32px;
+
+  .title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: white;
+  }
+
+  .carousel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: grid;
+    grid: auto / auto-flow max-content;
+    grid-gap: 1em;
+    align-items: center;
+
+    .card {
+      background-color: white;
+      padding: 0px 0px 16px 0px;
+      border-radius: 12px;
+      
+      .card-image {
+        border-radius: 12px 12px 0px 0px;
+        height: 320px;
+      }
+
+      .card-title{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .year{
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+footer{
+    text-align: center;
+}
